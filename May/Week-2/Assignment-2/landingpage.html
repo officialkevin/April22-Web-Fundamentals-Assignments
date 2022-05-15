@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/1f32e61707.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Square+Peg&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+        
+            font-family: 'Mulish', sans-serif;
+        }
+        .nav{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           background-image: url(https://th.bing.com/th/id/OIP.BO0aL7GIlIF7kUk21717agHaEK?w=308&h=180&c=7&r=0&o=5&pid=1.7)
+           ;
+           background-size: contain;
+        }
+        .logo{
+            color: blue;
+            font-weight: var(--bolder-font);
+            font-family: 'Rubik Glitch', cursive;
+            padding-left: 2%;
+        }
+        .list-items{
+            float: left;
+            position: relative;
+            list-style: none;
+            padding-right: 20px;
+            
+        }
+        .list-items a{
+            color: white
+            
+        }
+        .container{
+            margin-top: 80px;
+            background-color: rgb(177, 19, 19);
+            padding: 2%;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            line-height: 30px;
+        }
+        .about-img{
+            width: 50%;
+            text-align: center;
+        }
+        .about-text{
+            width: 50%;
+        }
+        .about-text h2{
+            letter-spacing: 3px;
+            font-family: 'Rubik Glitch', cursive;
+        }
+        .about-img img{
+            width: 70%;
+        }
+        .container h2{
+            color: rgb(177, 19, 19)
+           
+        
+        }
+        .container .big-text{
+            font-family: 'Rubik Glitch', cursive;
+            color: var(--black-color);
+            font-weight: 1200;
+            font-size: 45px;
+            line-height: 45px;
+        }
+        .container .small-text{
+            font-size: small;
+            font-weight: 100;
+            color: white;
+            font-family: 'Rubik Glitch', cursive;
+        
+        }
+        .btn{
+            padding: 1.2% 8%;
+            border-radius: 20px;
+            border: 0px;
+        }
+        .btn-1{
+            background-color: rgb(147, 231, 10);
+            color: rgba(255, 255, 255, 0.661);
+        }
+        .btn-1:hover{
+            color: rgb(43, 55, 132);
+            background-color: rgb(43, 55, 132);
+        }
+        .item-1{
+            padding: 15px;
+        
+        }
+        
+        .fa-star{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgb(216, 9, 9);
+            color: yellow;
+            text-align: center;
+            font-weight: inherit;
+            font-size: 40px;
+        }
+        .fa-solid{
+            line-height: 80px;
+        }
+        .skills-text h2{
+            color: white;
+            font-size: 20px;
+            font-family: 'Rubik Glitch', cursive;
+        }
+        .skills-text p{
+            color: rgba(0, 0, 0, .5);
+            font-family: 'Rubik Glitch', cursive;
+        }
+        .card{
+            background-color: rgb(223, 31, 45);
+            border-radius: 20px;
+            margin-top: 20px;
+            padding: 2%;
+            display: flex;
+            align-items: center;
+            width: 25%;
+        }
+        .skills{
+            display: flex;
+            justify-content: space-around;
+        }
+        .design{
+            width: 80%;
+            margin: 10px auto;
+        }
+        .items-3{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .img-design img{
+            width: 90%;
+            border-radius: 20px;
+        }
+        .video-sec{
+            display: flex;
+            width: 100%;
+            align-items: center;background-color: rgb(43, 55, 132);
+            margin-top: 40px;
+        }
+        .text-vid{
+            background-color: rgb(43, 55, 132);
+            color: aliceblue;
+            width: 30%;
+            padding-left: 20%;
+            font-size: x-large;
+            font-weight: 600;
+            font-family: 'Rubik Glitch', cursive;
+        }
+        .vid-vid{
+            width: 50%;
+            height: 100%;
+            padding-bottom: 0px;
+            background-image: url(https://img.favpng.com/18/17/15/spider-man-logo-brand-font-png-favpng-97z24sFqzXZCvpidvWgtYnyhU.jpg);
+            background-size:cover;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 80px;
+        }
+        .vid-vid i{
+            height: 150px;
+            width: 150px;
+            border: 5px solid black;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 145px;
+        }
+        .subs{ 
+            font-family: 'Rubik Glitch', cursive;
+            width: 40%;
+            margin: 100px auto;
+            text-align: center;
+            background-color: rgb(223, 31, 45);
+            padding: 30px;
+            border-radius: 60px;
+        }
+        .subs h2{
+            font-size: 23px;
+        }
+        .subs p{
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.544);
+        }
+        input{
+            width: 190px;
+            padding: 2%;
+        }
+        input[type="email"]{
+        border: 3px solid rgba(0, 0, 0, 0.374);
+        border-radius: 10px 0 0 10px;
+        border-right: 0px;
+        }
+        input[type="submit"]{
+            border: 3px solid  blueviolet;
+            border-radius: 0px 5px 5px 0;
+            border-left: 0px;
+            background-color: blueviolet;
+            color: white;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .footer{
+            background-color: rgb(223, 31, 45);
+            display: flex;
+            justify-content: space-around;
+            padding: 5%;
+            margin: 2%;
+            border-radius: 20px;
+        }
+        ul{
+            list-style: none;
+            line-height: 50px;
+            color: rgba(0, 0, 0, 0.539);
+        }
+        ul li h4{
+            color: black;
+            letter-spacing: 2px;
+        }
+        
+        @media (max-width: 300px) {
+            .nav {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgb(223, 31, 45);
+                flex-direction: column;
+            }
+            .card{
+                width: 100%;
+            }
+            .skills{
+                flex-direction: column;
+            }
+            .video-sec{
+                flex-direction: column;
+            }
+            .text-vid {
+                background-color: rgb(223, 31, 45);
+                color: aliceblue;
+                font-size: large;
+                font-weight: 600;
+                padding: 5%;
+            }
+            .vid-vid {
+                width: 100%;
+                background-image: url(https://img.favpng.com/18/17/15/spider-man-logo-brand-font-png-favpng-97z24sFqzXZCvpidvWgtYnyhU.jpg);
+                height: 400px;
+              
+            }
+        
+            .subs{
+                width: 90%;
+            }
+            .container .big-text {
+                font-family: 'Rubik Glitch', cursive;
+                font-size: 13px;
+                line-height: 17px;
+            }
+            
+            .container .small-text {
+            font-size: 8px;
+            line-height: 8px;
+            }
+            .footer{
+                flex-direction: column;
+            }
+            .items-3{
+                flex-direction: column;
+            }
+        }
+        @media (max-width: 600px) {
+            .nav {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgb(223, 31, 45);
+                /* flex-direction: column; */
+            }
+            .card{
+                width: 100%;
+            }
+            .skills{
+                flex-direction: column;
+            }
+            .video-sec{
+                flex-direction: column;
+            }
+            .text-vid {
+                background-color: rgb(223, 31, 45);
+                color: aliceblue;
+                font-size: large;
+                font-weight: 600;
+                padding: 5%;
+            }
+            .vid-vid {
+                width: 100%;
+                background-image: url(https://img.favpng.com/18/17/15/spider-man-logo-brand-font-png-favpng-97z24sFqzXZCvpidvWgtYnyhU.jpg);
+                height: 400px;
+              
+            }
+        
+            .subs{
+                width: 90%;
+            }
+            .container .big-text {
+                font-family: 'Rubik Glitch', cursive;
+                font-size: 13px;
+                line-height: 17px;
+            }
+            
+            .container .small-text {
+            font-size: 8px;
+            line-height: 8px;
+            }
+            
+           
+        
+        }
+        @media (max-width: 900px) {
+            .nav {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgb(223, 31, 45);
+                
+            }
+            .card{
+                width: 70%;
+                margin: 5px auto;
+            }
+            .skills{
+                flex-direction: column;
+            }
+            .video-sec{
+                flex-direction: column;
+            }
+            .text-vid {
+                background-color: rgb(223, 31, 45);
+                color: aliceblue;
+                font-size: large;
+                font-weight: 600;
+                padding: 5%;
+            }
+            .vid-vid {
+                width: 100%;
+                background-image: url(https://img.favpng.com/18/17/15/spider-man-logo-brand-font-png-favpng-97z24sFqzXZCvpidvWgtYnyhU.jpg);
+                height: 400px;
+              
+            }
+        
+            .subs{
+                width: 75%;
+            }
+            .container .big-text {
+                font-family: 'Rubik Glitch', cursive;
+                font-size: 30px;
+                line-height: 30px;
+            }
+            
+            .container .small-text {
+            font-size: 16px;
+            line-height: 16px;
+            }
+            .items-3{
+                flex-direction: row;
+            }
+        }
+        @media (max-width: 1200px) {
+            .nav {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgb(43, 55, 132);
+                
+            }
+            .card{
+                width: 70%;
+                margin: 5px auto;
+            }
+            .skills{
+                flex-direction: column;
+            }
+            .video-sec{
+                flex-direction: column;
+            }
+            .text-vid {
+                background-color: rgb(223, 31, 45);
+                color: aliceblue;
+                font-size: large;
+                font-weight: 600;
+                padding: 5%;
+            }
+            .vid-vid {
+                width: 100%;
+                background-image: url(https://img.favpng.com/18/17/15/spider-man-logo-brand-font-png-favpng-97z24sFqzXZCvpidvWgtYnyhU.jpg);
+                height: 400px;
+              
+            }
+        
+            .subs{
+                width: 45%;
+            }
+            .container .big-text {
+                font-size: 45px;
+                line-height: 45px;
+                font-family: 'Rubik Glitch', cursive;
+            }
+            
+            .container .small-text {
+            font-size: 20px;
+            line-height: 20px;
+            }
+            .items-3{
+                flex-direction: row;
+            }
+        }
+        @media (max-width: 1500px) {
+            .nav {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgb(43, 55, 132);
+                /* flex-direction: column; */
+            }
+            .card{
+                width: 70%;
+                margin: 5px auto;
+            }
+            .video-sec{
+                flex-direction: column;
+            }
+            .text-vid {
+                background-color: rgb(223, 31, 45);
+                color: aliceblue;
+                font-size: large;
+                font-weight: 600;
+                padding: 5%;
+            }
+            .vid-vid {
+                width: 100%;
+                background-image: url(data:image/jpeg;base64,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);
+                height: 400px;
+              
+            }
+        
+            .subs{
+                width: 40%;
+            }
+            .container .big-text {
+                font-family: 'Rubik Glitch', cursive;
+                font-size: 45px;
+                line-height: 45px;
+            }
+            
+            .container .small-text {
+            font-size: 20px;
+            line-height: 20px;
+            }
+            .items-3{
+                flex-direction: row;
+            }
+            .explore{
+                color: white;
+            }
+        }
+
+        </style>
+</head>
+<body style="background-color:black;">
+    <nav class="nav">
+        <div class="logo">
+            <h2 class="logo"><img src="https://vignette.wikia.nocookie.net/marveldatabase/images/6/62/Spider-Man_Vol_1_logo.gif/revision/latest?cb=20131216184826" height="50px" width="200px" alt=""></h2>
+        </div> 
+        <div class="menu">
+            <li class="list-items"><a href="#">Home</a></li>
+            <li class="list-items"><a href="#">About</li>
+            <li class="list-items"><a href="#">Skills</a></li>
+            <li class="list-items"><a href="#">Contact</a></li>
+        </div>
+    </nav>
+    <section class="container about">
+        <div class="about-img">
+            <img src="https://th.bing.com/th/id/OIP.mrCpXEs1nWmpV7zzpC_2pQHaEC?w=277&h=180&c=7&r=0&o=5&pid=1.7"alt="none">
+        </div>
+        <div class="about-text">
+            <h2>SPIDERMAN COMING SOON</h2>
+            <p class="big-text">“What we believe we know may not be the truth.”  <br>“Not everyone has a happy ending.” “Work out, plenty of rest, you know, eat your green vegetables.”</p>
+            <p class="small-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eveniet odio placeat aperiam. Corrupti vero voluptates recusandae, laboriosam magni et.</p>
+            <button class="btn btn-1">dont Explore</button>
+        </div>
+   
+    </section>
+    <section class="skills">
+        <div class="card">
+            <div class="star item-1"><i class="fa-solid fa-star"></i></div>
+            <div class="skills-text">
+                <h2>Best quality</h2>
+                <p>A team of experts passionate about product management</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="star item-1"><i class="fa-solid fa-star"></i></div>
+            <div class="skills-text">
+                <h2>Best quality</h2>
+                <p>A team of experts passionate about product management</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="star item-1"><i class="fa-solid fa-star"></i></div>
+            <div class="skills-text">
+                <h2>Best quality</h2>
+                <p>A team of experts passionate about product management</p>
+            </div>
+        </div>
+    </section>
+    <section class="design">
+        <h1 class="explore">Explore spiderman below</h1>
+        <div class="items-3">
+            <div class="img-design"><img src="images/chair-pot.jpg" alt=""></div>
+            <div class="img-design"><img src="images/chair-pot.jpg" alt=""></div>
+            <div class="img-design"><img src="images/chair-pot.jpg" alt=""></div>
+        </div>
+    </section>
+    <section class="video-sec">
+        <div class="text-vid">
+            <q>It was super easy to share <br> my uniqye concept. I got exactly what I ordered. <br>Great Service!</q>
+        </div>
+        <div class="vid-vid"><i class="fa-solid fa-play"></i></div>
+    </section>
+    <section class="subs">
+        <h2>Subscribe to our newsletterfa-border <br>to get updated</h2>
+        <p>Get our update on your inbox with lots of unique blocks, you <br> can easily build a page without coding. Build your bext consultancy <br> websire within few minuts</p><br>
+        <form action="">
+            <input type="email" placeholder="Enter email address"><input type="submit" value="SUBSCRIBE">
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="list">
+           
+            <ul><li> <h4>CONTACT</h4></li>
+                <li> </li>
+                <li>kevinrolandofficial@gmail.com</li>
+                <li>8438677570</li>
+            </ul>
+        </div>
+        <div class="list">
+           
+            <ul><li> <h4>PRODUCTS</h4></li>
+                <li>Spiderman</li>
+                <li>Batman</li>
+                <li>Wonder-woman</li>
+            </ul>
+        </div>
+        <div class="list">
+           
+            <ul><li> <h4>Our Company</h4></li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
